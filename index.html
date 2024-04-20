@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Tai khoan: <input type="text" id="tk" > </p>
+<p>Mat khau: <input type="password" id="mk"> </p>
+<p id="screen"></p>
+
+<script>
+let userName = prompt("nhap Tai Khoan", '');
+if (userName == 'Admin') {
+    let pass = prompt('nhap Mat Khau', '');
+    if (pass == 'TheMaster') {
+    	alert('Welcome!');
+    } else if (pass == null) {
+        alert('Canceled.');
+    } else {
+        alert('Wrong password');
+    }
+} else if (userName == null) {
+    alert('Canceled');
+} else {
+    alert("I don't know you");
+}
+</script>
+
+</body>
+</html>
